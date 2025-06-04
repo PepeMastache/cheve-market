@@ -134,3 +134,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Entorno virtual de Python
+env/
+backend/env/
+
+# Archivos de entorno
+.env
+.env.*
+!.env.example
+
+# Compilaciones de frontend (Vite / React)
+frontend/dist/
