@@ -16,9 +16,10 @@ export const router = createBrowserRouter([
     element: <Suspense fallback={<p>Cargando...</p>}><Shop /></Suspense>,
   },
   {
-    path: '/shop/:slug',
+    path: '/producto/:slug',
     element: <Suspense fallback={<p>Cargando producto...</p>}><ProductPage /></Suspense>,
   },
+
   {
     path: '/afiliados',
     element: <Suspense fallback={<p>Cargando...</p>}><LandingAfiliados /></Suspense>, // ✅

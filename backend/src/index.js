@@ -40,3 +40,14 @@ app.get('/api/test-db', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
+const affiliateRoutes = require('./routes/affiliate');
+app.use('/api', affiliateRoutes);
+
+const affiliateLinkRoutes = require('./routes/affiliate-links');
+app.use('/api/affiliate-links', affiliateLinkRoutes);
+
+
+// Para trakear y contabilizar clicks en enlaces de afilición:
+const trackClickRoutes = require('./routes/track-click');
+app.use('/api/track-click', trackClickRoutes);

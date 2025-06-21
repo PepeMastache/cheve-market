@@ -22,7 +22,7 @@ export default function Navbar() {
                 <Link className="nav-link" to="/shop">Tienda</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">Afiliados</Link>
+                <Link className="nav-link" to="/afiliados">Afiliados</Link>
               </li>
             </ul>
           </div>
