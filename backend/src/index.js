@@ -51,3 +51,6 @@ app.use('/api/affiliate-links', affiliateLinkRoutes);
 // Para trakear y contabilizar clicks en enlaces de afilición:
 const trackClickRoutes = require('./routes/track-click');
 app.use('/api/track-click', trackClickRoutes);
+
+const discountCodeRouter = require('./routes/discount-codes');
+app.use('/api/discount-codes', discountCodeRouter.router);
